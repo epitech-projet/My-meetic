@@ -1,0 +1,76 @@
+head, html
+{
+margin:0;
+width:100%;
+height: 100%;
+background: url('photo.jpeg') no-repeat center fixed;
+background-size: cover;
+background-color:#F4A460;
+opacity: 0.7;
+width: 100%;
+justify-content:space-around; 
+align-items: center;
+margin: auto;
+}
+header
+{
+display:flex;
+flex-wrap: nowrap;
+background-color:#F4A460;
+opacity: 0.7;
+width: 100%;
+justify-content:space-around; 
+align-items: center;
+margin: auto;
+}
+
+article
+{
+display:flex;
+justify-content: center;
+text-shadow: 2px 2px #F4A460;   
+}
+
+form{
+background-color: #F4A460;
+opacity: 0.9;
+border: solid 10px #CD853F;
+border-radius: 25px 25px;
+width: 30%;
+margin-left: 50px;
+}
+textarea{
+resize: none;
+}
+
+input {
+margin: 12px;
+margin-left: 5px;
+cursor: pointer;
+}
+
+.msg {
+display: block;
+width: 50%;
+margin: 50px;
+}
+
+label{
+cursor: pointer;
+display: block;
+float: left;
+width: 150px;
+margin-left: 25px;
+}
+
+form .info label{
+display: inline-block;
+text-align: right;
+text-align: center;
+}
+
+.button button {
+box-shadow: 5px 0px 5px black;
+color: teal;
+}
+
