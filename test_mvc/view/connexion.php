@@ -1,12 +1,13 @@
 <?php
-    $serveur = 'localhost';
-    $user = 'root';
-    $password = 'root';
+    
+$serveur = 'localhost';
+$user = 'root';
+$password = 'root';
 
 try{
     $connexion = new PDO("mysql:host=$serveur;dbname=Meetic",$user, $password);
     $connexion-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "conexion possible";
+    echo "connexion possible";
     
 }
 catch(PDOException $e)
