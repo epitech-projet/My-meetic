@@ -1,5 +1,8 @@
 <?php
- include('connexion.php');
+require_once'classMeetic.php';
+
+$membre_Connect = new Connect();
+$moco = $membre_Connect->read();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,9 +39,7 @@
 		<div class="button">
 			<button type="submit">Validation</button>
 		</div>
-
-		
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		</center>
 		</form>
 	</body>

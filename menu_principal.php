@@ -1,12 +1,15 @@
 <?php
- include('connexion.php');
+require_once'classMeetic.php';
+
+$membre_Connect = new Connect();
+$moco = $membre_Connect->read();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="my_style2.css" />
+    <link rel="stylesheet" type="text/css" href="my_style.css" />
     <title></title>
 </head>
 
