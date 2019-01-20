@@ -10,10 +10,78 @@ class Connect
 
 	public function read()
 	{
-		$value = "SELECT*FROM membre ORDER BY date_naissance";
+		$value = "SELECT * FROM membre WHERE sexe LIKE '%{$_POST['sexe']}%'";
+		$value2 = $this->pdo->prepare($value);
+		$value2->bindValue(':sexe',$_POST['sexe'], PDO::PARAM_STR);
+		$value2->execute();
+		
+	}
+
+	public function profil()
+	{
+		$value = "SELECT nom,prenom FROM membre WHERE login= :login AND mot_de_passe = :password";
+		$value2 = $this->pdo->prepare($value);
+		$value2->bindValue(':login',$_POST['login'], PDO::PARAM_STR);
+    	$value2->bindValue(':password',$_POST['password'], PDO::PARAM_STR);
+		$value2->execute();
+		$profil = $value2->fetchall();
+		return $profil;
+	}
+
+	public function age()
+	{
+
+	}
+
+	public function ville()
+	{
+		$value = "SELECT ville from membre order by ville ASC";
 		$value2 = $this->pdo->prepare($value);
 		$value2->execute();
-		/*return $value2->fetchall();*/
+		$ville = $value2->fetchall(PDO::FETCH_ASSOC);
+		return $ville;
+
+	}
+
+	public function sex_local()
+	{
+		$value = "SELECT * FROM membre WHERE ville = :ville AND sexe = :sexe ";
+		$value2 = $this->pdo->prepare($value);
+		$value2->bindValue(':sexe',$_POST['sexe'], PDO::PARAM_STR);
+		$value2->bindValue(':ville',$_POST['ville'], PDO::PARAM_STR);
+		$value2->execute();
+		$sex_local=$value2->fetchall();
+		return $sex_local;
+	}
+
+	public function search_sex()
+	{
+		$value ="SELECT*FROM membre WHERE sexe = :sexe ";
+		$value2 = $this->pdo->prepare($value);
+		$value2->bindValue(':sexe',$_POST['sexe'], PDO::PARAM_STR);
+		$value2->execute();
+		$search_sex= $value2->fetchall();
+		return $search_sex;
+	}
+
+	public function search_local()
+	{
+		$value ="SELECT*FROM membre WHERE ville = :ville"; 
+		$value2 = $this->pdo->prepare($value);
+		$value2->bindValue(':ville',$_POST['ville'], PDO::PARAM_STR);
+		$value2->execute();
+		$search_local= $value2->fetchall();
+		return $search_local;
+	}
+
+	public function display()
+	{
+		$value ="SELECT*FROM membre ";
+		$value2 = $this->pdo->prepare($value);
+		$value2->execute();
+		$kiki= $value2->fetchall();
+		//echo $kiki;	
+		
 	}
 
 	public function create()
@@ -29,6 +97,7 @@ class Connect
     	$value2->bindValue(':login',$_POST['login'], PDO::PARAM_STR);
     	$value2->bindValue(':password',$_POST['password'], PDO::PARAM_STR);
     	return $value2->execute();
+
 	}
 }
 ?>

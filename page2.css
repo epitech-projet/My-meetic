@@ -1,0 +1,531 @@
+
+td, th 
+{
+  background-color: grey;
+  font-size:x-large;
+  opacity: 0.7;
+  justify-content: center;
+}
+
+ #film
+ {
+ 	display: flex;
+ }
+
+ #resultat
+{
+  display: flex;
+  justify-content: center;
+}
+
+ form{
+  border: 3px ridge white;
+  padding: 10px;
+}
+
+ #menu
+ {
+ 	display: flex;
+ 	justify-content: center;
+ 	text-align: center;
+ }
+
+ article{
+  text-decoration-color: white;
+  text-align: center;
+
+ }
+
+@media (max-width: 576px) {
+  /* On définit sa grille */
+  /* Gutters signifie Gouttière en anglais */
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    /* le comportement de vos boites */
+    float: left;
+    background: blue;
+    padding: 30px; }
+
+  .col-1 {
+    width: 8.33333%; }
+
+  .col-2 {
+    width: 16.66667%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.33333%; }
+
+  .col-5 {
+    width: 41.66667%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33333%; }
+
+  .col-8 {
+    width: 66.66667%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33333%; }
+
+  .col-11 {
+    width: 91.66667%; }
+
+  .col-12 {
+    width: 100%; }
+
+  .alert-success-small, .alert-info-small, .alert-warning-small, .alert-danger-small {
+    padding: 10px; }
+    .alert-success-small p, .alert-info-small p, .alert-warning-small p, .alert-danger-small p {
+      font-size: 12px; }
+    .alert-success-small:before, .alert-info-small:before, .alert-warning-small:before, .alert-danger-small:before {
+      width: 18px;
+      height: 18px; } }
+@media (min-width: 576px) {
+  /* On définit sa grille */
+  /* Gutters signifie Gouttière en anglais */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    /* le comportement de vos boites */
+    float: left;
+    background: red;
+    padding: 30px; }
+
+  .col-sm-1 {
+    width: 8.33333%; }
+
+  .col-sm-2 {
+    width: 16.66667%; }
+
+  .col-sm-3 {
+    width: 25%; }
+
+  .col-sm-4 {
+    width: 33.33333%; }
+
+  .col-sm-5 {
+    width: 41.66667%; }
+
+  .col-sm-6 {
+    width: 50%; }
+
+  .col-sm-7 {
+    width: 58.33333%; }
+
+  .col-sm-8 {
+    width: 66.66667%; }
+
+  .col-sm-9 {
+    width: 75%; }
+
+  .col-sm-10 {
+    width: 83.33333%; }
+
+  .col-sm-11 {
+    width: 91.66667%; }
+
+  .col-sm-12 {
+    width: 100%; } }
+@media (min-width: 768px) {
+  /* On définit sa grille */
+  /* Gutters signifie Gouttière en anglais */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    /* le comportement de vos boites */
+    float: left;
+    background: green;
+    padding: 30px; }
+
+  .col-md-1 {
+    width: 8.33333%; }
+
+  .col-md-2 {
+    width: 16.66667%; }
+
+  .col-md-3 {
+    width: 25%; }
+
+  .col-md-4 {
+    width: 33.33333%; }
+
+  .col-md-5 {
+    width: 41.66667%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-md-7 {
+    width: 58.33333%; }
+
+  .col-md-8 {
+    width: 66.66667%; }
+
+  .col-md-9 {
+    width: 75%; }
+
+  .col-md-10 {
+    width: 83.33333%; }
+
+  .col-md-11 {
+    width: 91.66667%; }
+
+  .col-md-12 {
+    width: 100%; } }
+@media (min-width: 992px) {
+  /* On définit sa grille */
+  /* Gutters signifie Gouttière en anglais */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    /* le comportement de vos boites */
+    float: left;
+    background: purple;
+    padding: 30px; }
+
+  .col-lg-1 {
+    width: 8.33333%; }
+
+  .col-lg-2 {
+    width: 16.66667%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-4 {
+    width: 33.33333%; }
+
+  .col-lg-5 {
+    width: 41.66667%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-7 {
+    width: 58.33333%; }
+
+  .col-lg-8 {
+    width: 66.66667%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-10 {
+    width: 83.33333%; }
+
+  .col-lg-11 {
+    width: 91.66667%; }
+
+  .col-lg-12 {
+    width: 100%; } }
+@media (min-width: 1200px) {
+  /* On définit sa grille */
+  /* Gutters signifie Gouttière en anglais */
+  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+    /* le comportement de vos boites */
+    float: left;
+    background: pink;
+    padding: 30px; }
+
+  .col-xl-1 {
+    width: 8.33333%; }
+
+  .col-xl-2 {
+    width: 16.66667%; }
+
+  .col-xl-3 {
+    width: 25%; }
+
+  .col-xl-4 {
+    width: 33.33333%; }
+
+  .col-xl-5 {
+    width: 41.66667%; }
+
+  .col-xl-6 {
+    width: 50%; }
+
+  .col-xl-7 {
+    width: 58.33333%; }
+
+  .col-xl-8 {
+    width: 66.66667%; }
+
+  .col-xl-9 {
+    width: 75%; }
+
+  .col-xl-10 {
+    width: 83.33333%; }
+
+  .col-xl-11 {
+    width: 91.66667%; }
+
+  .col-xl-12 {
+    width: 100%; } }
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+.btn-dark {
+  background-color: #343a40;
+  display: inline-block;
+  padding: .938em 1.875em;
+  border: .094em solid #743EA5;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif; }
+
+.btn-dark:hover {
+  background-color: #343a40; }
+
+.btn-dark:active {
+  background-color: #343a40; }
+
+.btn-danger {
+  background-color: #dc3545;
+  display: inline-block;
+  padding: .938em 1.875em;
+  border: .094em solid #743EA5;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif; }
+
+.btn-danger:hover {
+  background-color: #dc3545; }
+
+.btn-danger:active {
+  background-color: #dc3545; }
+
+.btn-warning {
+  background-color: #ffc107;
+  display: inline-block;
+  padding: .938em 1.875em;
+  border: .094em solid #743EA5;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif; }
+
+.btn-warning:hover {
+  background-color: #ffc107; }
+
+.btn-warning:active {
+  background-color: #ffc107; }
+
+.btn-info {
+  background-color: #17a2b8;
+  display: inline-block;
+  padding: .938em 1.875em;
+  border: .094em solid #743EA5;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif; }
+
+.btn-info:hover {
+  background-color: #17a2b8; }
+
+.btn-info:active {
+  background-color: #17a2b8; }
+
+.btn-success {
+  background-color: #28a745;
+  display: inline-block;
+  padding: .938em 1.875em;
+  border: .094em solid #743EA5;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif; }
+
+.btn-success:hover {
+  background-color: #28a745; }
+
+.btn-success:active {
+  background-color: #28a745; }
+
+.btn-primary {
+  background-color: #007bff;
+  display: inline-block;
+  padding: .938em 1.875em;
+  border: .094em solid #743EA5;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif; }
+
+.btn-primary:hover {
+  background-color: #007bff; }
+
+.btn-primary:active {
+  background-color: #007bff; }
+
+.btn-default {
+  background-color: white;
+  display: inline-block;
+  padding: .938em 1.875em;
+  border: .094em solid #743EA5;
+  border-radius: .625em;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 .063em #000;
+  cursor: pointer;
+  font: bold 1.8rem sans-serif; }
+
+.btn-default:hover {
+  background-color: white; }
+
+.btn-default:active {
+  background-color: white; }
+
+.text-info {
+  color: color-yiq(theme-color("dark")); }
+
+.alert-success, .alert-success-small, .alert-success-large, .alert-info, .alert-info-small, .alert-info-large, .alert-warning-small, .alert-warning-large, .alert-danger-small, .alert-danger-large, .alert-warning, .alert-danger {
+  width: 100%;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 4px; }
+  .alert-success p, .alert-success-small p, .alert-success-large p, .alert-info p, .alert-info-small p, .alert-info-large p, .alert-warning-small p, .alert-warning-large p, .alert-danger-small p, .alert-danger-large p, .alert-warning p, .alert-danger p, .alert-success:before, .alert-success-small:before, .alert-success-large:before, .alert-info:before, .alert-info-small:before, .alert-info-large:before, .alert-warning-small:before, .alert-warning-large:before, .alert-danger-small:before, .alert-danger-large:before, .alert-warning:before, .alert-danger:before {
+    float: left; }
+  .alert-success:before, .alert-success-small:before, .alert-success-large:before, .alert-info:before, .alert-info-small:before, .alert-info-large:before, .alert-warning-small:before, .alert-warning-large:before, .alert-danger-small:before, .alert-danger-large:before, .alert-warning:before, .alert-danger:before {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    content: '';
+    border-radius: 1000px;
+    background: url("icon-sprite.png") no-repeat; }
+  .alert-success p, .alert-success-small p, .alert-success-large p, .alert-info p, .alert-info-small p, .alert-info-large p, .alert-warning-small p, .alert-warning-large p, .alert-danger-small p, .alert-danger-large p, .alert-warning p, .alert-danger p {
+    color: #fff; }
+
+.alert-success-small, .alert-info-small, .alert-warning-small, .alert-danger-small {
+  padding: 10px; }
+  .alert-success-small p, .alert-info-small p, .alert-warning-small p, .alert-danger-small p {
+    font-size: 12px; }
+  .alert-success-small:before, .alert-info-small:before, .alert-warning-small:before, .alert-danger-small:before {
+    width: 18px;
+    height: 18px; }
+
+.alert-success-large, .alert-info-large, .alert-warning-large, .alert-danger-large {
+  padding: 30px; }
+  .alert-success-large p, .alert-info-large p, .alert-warning-large p, .alert-danger-large p {
+    font-size: 24px; }
+  .alert-success-large:before, .alert-info-large:before, .alert-warning-large:before, .alert-danger-large:before {
+    width: 40px;
+    height: 40px; }
+
+.alert-success, .alert-success-small, .alert-success-large {
+  background: #75aa61; }
+  .alert-success:before, .alert-success-small:before, .alert-success-large:before {
+    background-color: #98bf89;
+    background-position: -47px 7px; }
+
+.alert-success-small:before {
+  background-position: 4px 5px; }
+
+.alert-success-large:before {
+  background-position: -89px 13px; }
+
+.alert-info, .alert-info-small, .alert-info-large, .alert-warning-small, .alert-warning-large, .alert-danger-small, .alert-danger-large {
+  background: #6181aa; }
+  .alert-info:before, .alert-info-small:before, .alert-info-large:before, .alert-warning-small:before, .alert-warning-large:before, .alert-danger-small:before, .alert-danger-large:before {
+    background-color: #98bf89;
+    background-position: -47px 7px; }
+
+.alert-info-small:before {
+  background-position: 4px 5px; }
+
+.alert-info-large:before {
+  background-position: -89px 13px; }
+
+.alert-warning {
+  background: #cecf60; }
+  .alert-warning:before {
+    background-color: #98bf89;
+    background-position: -47px 7px; }
+
+.alert-warning-small:before {
+  background-position: 4px 5px; }
+
+.alert-warning-large:before {
+  background-position: -89px 13px; }
+
+.alert-danger {
+  background: #ae6872; }
+  .alert-danger:before {
+    background-color: #98bf89;
+    background-position: -47px 7px; }
+
+.alert-danger-small:before {
+  background-position: 4px 5px; }
+
+.alert-danger-large:before {
+  background-position: -89px 13px; }
+
+.img-circle {
+  border-radius: 50%; }
+
+.img-rounded {
+  border-radius: 50%; }
+
+.img-thumbnail {
+  border: 1px solid #ddd;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded border */
+  padding: 5px;
+  /* Some padding */
+  width: 150px;
+  /* Set a small width */ }
+
+/*# sourceMappingURL=test.css.map */

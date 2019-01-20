@@ -68,3 +68,12 @@ box-shadow: 5px 0px 5px black;
 color: teal;
 }
 
+aside
+{
+background-color: #F4A460;
+opacity: 0.9;
+border: solid 10px #CD853F;
+border-radius: 25px 25px;
+width: 30%;
+margin-left: 50px;	
+}

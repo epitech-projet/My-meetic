@@ -1,8 +1,8 @@
 <?php
 require_once'classMeetic.php';
-
 $membre_Connect = new Connect();
 $moco = $membre_Connect->read();
+
 
 if(isset($_POST['surname']) && !empty($_POST['surname']) && isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['date']) && !empty($_POST['date']) && isset($_POST['sexe']) && !empty($_POST['sexe']) && isset($_POST['ville']) && !empty($_POST['ville']) && isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['login']) && !empty($_POST['login']) && isset($_POST['password']) && !empty($_POST['password']))
     {
@@ -37,9 +37,9 @@ if(isset($_POST['surname']) && !empty($_POST['surname']) && isset($_POST['name']
             gravés dans notre mémoire</h1>
     </article>
     <section>
-    	<?php foreach ($moco as $mocos);?>
+    	<?php foreach ($moco as $mocos); ?>
 		
-         <form method="POST" action="membre.php" id="envoie">
+         <form method="POST" action="envoie.php" action="membre.php" id="envoie">
                 <h4>Inscrivez-vous !!</h4>
                 <div  class="info"></div>
                 <div>
@@ -52,7 +52,7 @@ if(isset($_POST['surname']) && !empty($_POST['surname']) && isset($_POST['name']
                 </div>
                 <div>
                     <label for="date">Date de naissance </label>
-                    <input type="date" value="2018-07-22" id="date" name="date" min="1950-01-01" max="2000-01-01" required >
+                    <input type="date" id="date" name="date" min="1950-01-01" max="2000-01-01" required >
                 </div>
                 <div>
                    	<label for="sexe">Sexe :</label>
@@ -75,10 +75,9 @@ if(isset($_POST['surname']) && !empty($_POST['surname']) && isset($_POST['name']
                    <label for="password">Mot de Passe :</label> 
                     <input type="password" id="password" name="password"  required /> 
                 </div>
-                
-
+               
                 <div class="button">
-                    <button type="submit">Validation :</button>
+                    <button type="submit" action='membre.php'>Validation :</button>
                 </div>
         </form>
       

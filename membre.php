@@ -3,7 +3,8 @@ require_once'classMeetic.php';
 
 $membre_Connect = new Connect();
 $moco = $membre_Connect->read();
-?>
+$acces = $membre_Connect->profil();	      
+?> 
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -27,17 +28,18 @@ $moco = $membre_Connect->read();
     </article>
 		<center>
 	
-		<form method="post" action="menu_principal.php">
+		<form method="post" action="profil.php">
 		<div>
-			<label for="mail">Email:</label> 
-			<input type="email" id="mail" name="mail" required />
+			<label for="login">Login:</label> 
+			<input type="login" id="login" value="" required />
 		</div>
 		<div>
 			<label for="password">Mot de Passe :</label> 
-			<input type="password" value="password" required /> 
+			<input type="password" id="password" value="" required /> 
 		</div>
+		
 		<div class="button">
-			<button type="submit">Validation</button>
+			<button type="submit">Validation </button>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		</center>
