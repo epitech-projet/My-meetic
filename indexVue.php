@@ -8,13 +8,11 @@ if(isset($_POST['surname']) && !empty($_POST['surname']) && isset($_POST['name']
     {
     	$membre_Connect->create($_POST);
     }
-
 ?>
 <!DOCTYPE html>
-<html lang="fr" dir="">
-
+<html lang="fr" >
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="my_style.css" />
 
     <title></title>
@@ -37,7 +35,7 @@ if(isset($_POST['surname']) && !empty($_POST['surname']) && isset($_POST['name']
             gravés dans notre mémoire</h1>
     </article>
     <section>
-    	<?php foreach ($moco as $mocos); ?>
+    	<!-- <?php foreach ($moco as $mocos); ?> -->
 		
          <form method="POST" action="envoie.php" action="membre.php" id="envoie">
                 <h4>Inscrivez-vous !!</h4>
